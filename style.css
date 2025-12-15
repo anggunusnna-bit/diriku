@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 50, 0.6);
+    width: 350px;
+    padding: 20px;
+    margin: 80px auto;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Input & Button */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+/* Preview */
+.preview img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Animasi Ikan */
+.fish {
+    position: absolute;
+    font-size: 40px;
+    animation: swim 15s linear infinite;
+}
+
+.fish1 {
+    top: 20%;
+    animation-duration: 12s;
+}
+
+.fish2 {
+    top: 50%;
+    font-size: 50px;
+    animation-duration: 18s;
+}
+
+.fish3 {
+    top: 70%;
+    font-size: 45px;
+    animation-duration: 20s;
+}
+
+/* Keyframes */
+@keyframes swim {
+    from {
+        left: -10%;
+    }
+    to {
+        left: 110%;
+    }
+}
